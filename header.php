@@ -25,8 +25,10 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
 
-	<header id="top-header">
-		aeae
+	<header class="top-bar">
+		<div class="container">
+			ae
+		</div>
 	</header>
 
 	<header id="masthead" class="site-header">
