@@ -881,7 +881,14 @@ textarea {
 .top-bar i.fab,
 .top-bar i.fa {
 	font-size: 22px;
+}
+
+.top-bar i.fa {
 	margin-right: 10px;
+}
+
+.top-bar i.fab {
+	margin-left: 10px;
 }
 
 .top-bar ul.socialmedia {
@@ -953,7 +960,7 @@ textarea {
 
 .main-header .main-navigation li a {
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 15px;
 	font-family: "Arimo";
 	padding: 10px 0px;
 	margin-bottom: 10px;
@@ -992,6 +999,10 @@ textarea {
 	}
 	.main-header .menu-toggle {
 		display: none;
+	}
+	.main-header .main-navigation {
+		display: flex;
+		justify-content: flex-end;
 	}
 	.main-header .main-navigation ul {
 		justify-content: center;
