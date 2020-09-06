@@ -31,7 +31,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
 
     li {
@@ -40,24 +40,27 @@
       }
     }
   }
-  .col-md-6:last-child p {
+
+  .col-sm-8:last-child {
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
-    margin-bottom: 5px;
+
+    p {
+      margin: 0;
+      margin-right: 10px;
+    }
   }
 }
 
 @media (min-width: 768px) {
   .top-bar {
-    text-align: left;
     padding: 0;
-    .col-md-6:last-child {
-      display: flex;
-      justify-content: flex-end;
+    text-align: left;
 
-      p {
-        margin: 0;
-        margin-right: 10px;
-      }
+    .col-sm-8:last-child {
+      justify-content: flex-end;
+      margin-top: 0px;
     }
   }
 }
