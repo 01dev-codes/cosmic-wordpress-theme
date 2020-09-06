@@ -1,13 +1,13 @@
 .top-bar {
   color: #333;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background: $primary-color;
 
   .row {
     min-height: 42px;
   }
-  background: $primary-color;
 
   p,
   a {
@@ -44,6 +44,11 @@
     li {
       a {
         color: #333;
+        transition: all 0.25s;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
   }
@@ -51,7 +56,6 @@
   .col-sm-8:last-child {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 
     p {
       margin: 0;

@@ -5,6 +5,7 @@
   position: sticky;
   top: 0px;
   z-index: 10;
+  text-align: center;
 
   .site-branding {
     margin-top: 12px;
@@ -21,6 +22,7 @@
     font-size: 24px;
     display: inline-block;
     color: #333;
+    margin-bottom: 12px;
   }
 
   .main-navigation {
@@ -33,6 +35,11 @@
       padding: 10px 0px;
       margin-bottom: 10px;
       color: #333;
+      transition: all 0.25s;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
     .current-menu-item a {
@@ -43,6 +50,11 @@
     margin-left: 10px;
     font-size: 20px;
     position: relative;
+    transition: all 0.25s;
+
+    &:hover {
+      opacity: 0.5;
+    }
 
     span.counter {
       font-family: "Arimo";
@@ -66,9 +78,15 @@
   .main-header {
     .site-branding {
       text-align: left;
+      margin-top: 0;
     }
     .menu-toggle {
       display: none;
+    }
+
+    .menuwrapper {
+      display: flex;
+      flex-direction: row-reverse;
     }
 
     .main-navigation {
