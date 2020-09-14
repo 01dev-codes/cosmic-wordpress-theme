@@ -1,0 +1,46 @@
+.main-footer {
+  background: $primary-color;
+  text-align: center;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .name {
+    text-transform: uppercase;
+    font-size: 21px;
+    font-family: "Arimo";
+    font-weight: 800;
+    margin: 0;
+    line-height: 2;
+  }
+
+  .details {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Arimo";
+  }
+
+  ul.socialmedia {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: center;
+
+    li {
+      a {
+        color: #333;
+        transition: all 0.25s;
+        font-size: 28px;
+        margin: 0px 6px;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

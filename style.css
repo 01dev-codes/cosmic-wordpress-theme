@@ -1,8 +1,8 @@
 /*!
-Theme Name: _s
+Theme Name: Cosmic
 Theme URI: https://underscores.me/
-Author: Automattic
-Author URI: https://automattic.com/
+Author: lhas.js
+Author URI: https://01dev.codes/
 Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 Version: 1.0.0
 Tested up to: 5.4
@@ -859,7 +859,7 @@ textarea {
 	text-align: center;
 	padding-top: 6px;
 	padding-bottom: 6px;
-	background: #ffe26f;
+	background: #fff2c1;
 }
 
 .top-bar .row {
@@ -875,7 +875,7 @@ textarea {
 	margin: 0;
 	color: #333;
 	font-family: "Arimo";
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .top-bar i.fab,
@@ -966,7 +966,7 @@ textarea {
 
 .main-header .main-navigation li a {
 	text-transform: uppercase;
-	font-size: 15px;
+	font-size: 16px;
 	font-family: "Arimo";
 	padding: 10px 0px;
 	margin-bottom: 10px;
@@ -1000,7 +1000,7 @@ textarea {
 	top: 0;
 	width: 14px;
 	height: 14px;
-	background: #ffe26f;
+	background: #fff2c1;
 	color: #333;
 	border-radius: 100%;
 	z-index: 5;
@@ -1044,7 +1044,7 @@ textarea {
  */
 .widget_metaslider_widget .metaslider .flexslider .flex-direction-nav li a {
 	opacity: 1 !important;
-	background: #ffe26f !important;
+	background: #fff2c1 !important;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16) !important;
 }
 
@@ -1157,12 +1157,64 @@ textarea {
 	display: none;
 }
 
+#sb_instagram {
+	padding-bottom: 0 !important;
+}
+
 #sbi_load {
 	display: none !important;
 }
 
 #sbi_images {
 	padding: 10px !important;
+}
+
+/**
+ * Main Footer
+ */
+.main-footer {
+	background: #fff2c1;
+	text-align: center;
+	min-height: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-footer .name {
+	text-transform: uppercase;
+	font-size: 21px;
+	font-family: "Arimo";
+	font-weight: 800;
+	margin: 0;
+	line-height: 2;
+}
+
+.main-footer .details {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: "Arimo";
+}
+
+.main-footer ul.socialmedia {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.main-footer ul.socialmedia li a {
+	color: #333;
+	transition: all 0.25s;
+	font-size: 28px;
+	margin: 0px 6px;
+}
+
+.main-footer ul.socialmedia li a:hover {
+	opacity: 0.5;
 }
 
 /*--------------------------------------------------------------
