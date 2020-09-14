@@ -19,43 +19,24 @@ get_header();
 	dynamic_sidebar( 'carousel_home' );
 } ?>
 
-	<main id="primary" class="site-main">
+<aside class="shopping-info">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<p><i class="fa fa-shipping-fast"></i> Frete <strong>grátis</strong> a partir de <strong>R$250</strong></p>
+			</div>
+			<div class="col-12 col-md-4">
+				<p><i class="fa fa-credit-card"></i> Até <strong>12x</strong> no cartão</p>
+			</div>
+			<div class="col-12 col-md-4">
+				<p><i class="fa fa-lock"></i> Compra <strong>100%</strong> segura</p>
+			</div>
+		</div>
+	</div>
+</aside>
 
-		<?php
-		if ( have_posts() ) :
+	<?php if ( is_active_sidebar( 'grid_home' ) ) {
+		dynamic_sidebar( 'grid_home' );
+	} ?>
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
-
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>

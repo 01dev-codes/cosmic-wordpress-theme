@@ -144,6 +144,17 @@ function _s_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Grid (Home)', '_s' ),
+			'id'            => 'grid_home',
+			'description'   => esc_html__( 'Adicione os widgets do Grid da Home aqui.', '_s' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<div class="widget-title"><span></span><h2>',
+			'after_title'   => '</h2></div>',
+		)
+	);
 }
 add_action( 'widgets_init', '_s_widgets_init' );
 

@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "shopping-info.css",
+	"sources": [
+		"../../sass/components/cosmic/shopping-info.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AACE,cADY,CACZ,UAAU,CAAC;CACT,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,mBAAmB;CAC5C;;AAHH,AAIE,cAJY,CAIZ,CAAC,CAAC;CACA,cAAc,EAAE,SAAS;CACzB,SAAS,EAAE,IAAI;CACf,UAAU,EAAE,MAAM;CAClB,MAAM,EAAE,MAAM;CACf"
+}
