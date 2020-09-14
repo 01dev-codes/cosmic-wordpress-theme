@@ -15,6 +15,10 @@
 get_header();
 ?>
 
+<?php if ( is_active_sidebar( 'carousel_home' ) ) {
+	dynamic_sidebar( 'carousel_home' );
+} ?>
+
 	<main id="primary" class="site-main">
 
 		<?php
