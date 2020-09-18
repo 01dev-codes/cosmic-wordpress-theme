@@ -87,6 +87,11 @@
     .menuwrapper {
       display: flex;
       flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    .primaryaction {
+      margin-bottom: 8px;
     }
 
     .main-navigation {

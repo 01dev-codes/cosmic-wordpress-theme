@@ -64,4 +64,51 @@
       }
     }
   }
+
+  #cfpp {
+    width: 100%;
+    margin: 0;
+    clear: both;
+
+    .calculo-de-frete {
+      display: flex;
+      align-items: center;
+
+      svg {
+        display: none;
+      }
+    }
+
+    .calculo-de-frete input {
+      width: 200px;
+      height: 60px;
+      margin-right: 10px;
+      text-align: left;
+      padding-left: 20px;
+      font-size: 16px;
+    }
+
+    .calculo-de-frete #calcular-frete {
+      height: 60px;
+      line-height: 1;
+      flex-shrink: 0;
+      margin: 0;
+      display: flex !important;
+      align-items: center;
+      padding: 0px 20px;
+      text-transform: uppercase;
+      background: transparent;
+      border: 1px solid #222;
+      color: #222;
+    }
+
+    #calcular-frete-loader {
+      flex-shrink: 0;
+      margin-left: 10px;
+    }
+
+    .resultado-frete thead {
+      font-weight: bold;
+    }
+  }
 }

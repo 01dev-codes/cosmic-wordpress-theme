@@ -1015,6 +1015,10 @@ textarea {
 	.main-header .menuwrapper {
 		display: flex;
 		flex-direction: row-reverse;
+		align-items: center;
+	}
+	.main-header .primaryaction {
+		margin-bottom: 8px;
 	}
 	.main-header .main-navigation {
 		display: flex;
@@ -1302,6 +1306,53 @@ textarea {
 
 .single-product .cart .button i.fa {
 	margin-right: 6px;
+}
+
+.single-product #cfpp {
+	width: 100%;
+	margin: 0;
+	clear: both;
+}
+
+.single-product #cfpp .calculo-de-frete {
+	display: flex;
+	align-items: center;
+}
+
+.single-product #cfpp .calculo-de-frete svg {
+	display: none;
+}
+
+.single-product #cfpp .calculo-de-frete input {
+	width: 200px;
+	height: 60px;
+	margin-right: 10px;
+	text-align: left;
+	padding-left: 20px;
+	font-size: 16px;
+}
+
+.single-product #cfpp .calculo-de-frete #calcular-frete {
+	height: 60px;
+	line-height: 1;
+	flex-shrink: 0;
+	margin: 0;
+	display: flex !important;
+	align-items: center;
+	padding: 0px 20px;
+	text-transform: uppercase;
+	background: transparent;
+	border: 1px solid #222;
+	color: #222;
+}
+
+.single-product #cfpp #calcular-frete-loader {
+	flex-shrink: 0;
+	margin-left: 10px;
+}
+
+.single-product #cfpp .resultado-frete thead {
+	font-weight: bold;
 }
 
 /**

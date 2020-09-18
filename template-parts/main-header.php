@@ -10,8 +10,8 @@
         <div class="col-12 col-md-8">
             <div class="menuwrapper">
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
-                <a href="#" class="primaryaction"><i class="fa fa-user"></i></a>
-                <a href="#" class="primaryaction"><span class="counter">0</span><i class="fa fa-shopping-cart"></i></a>
+                <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" class="primaryaction"><i class="fa fa-user"></i></a>
+                <a href="<?php echo wc_get_cart_url(); ?>" class="primaryaction"><span class="counter"><?php echo WC()->cart->get_cart_contents_count() ?></span><i class="fa fa-shopping-cart"></i></a>
                 <nav id="site-navigation" class="main-navigation">
                     <?php
                     wp_nav_menu(
