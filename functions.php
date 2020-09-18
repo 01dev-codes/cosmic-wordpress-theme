@@ -206,3 +206,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+function woocommerce_product_single_add_to_cart_text_callback( $example ) {
+    return 'Eu quero';
+}
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_product_single_add_to_cart_text_callback' );
+add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_product_single_add_to_cart_text_callback' );

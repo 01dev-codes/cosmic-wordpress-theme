@@ -1,0 +1,23 @@
+.styled-title {
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 1.5em;
+  h2 {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding-right: 15px;
+    font-family: "Arimo";
+    margin-bottom: 1em;
+  }
+
+  span {
+    width: 100%;
+    height: 1px;
+    background: #222;
+    position: absolute;
+    right: 0;
+    top: 51%;
+  }
+}

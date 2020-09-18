@@ -1,0 +1,67 @@
+.single-product {
+  font-family: "Arimo";
+  .woocommerce-tabs {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .woocommerce-tabs .tabs {
+    display: none;
+  }
+  .woocommerce-Tabs-panel--description {
+    margin: 1em 0;
+  }
+  .woocommerce-tabs .panel h2:first-of-type {
+    display: none;
+  }
+  .site-main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .main-price {
+    display: flex;
+    align-items: center;
+    del {
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.4);
+      font-weight: 300;
+    }
+    ins {
+      font-size: 32px;
+      background: transparent;
+      color: #575757;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+  }
+
+  .cart {
+    display: flex;
+
+    .quantity {
+      margin-right: 10px;
+
+      input {
+        width: 90px;
+        height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    .button {
+      cursor: pointer;
+      background: $primary-color;
+      border: none;
+      color: #575757;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-radius: 0px;
+      padding-left: 25px;
+      padding-right: 25px;
+
+      i.fa {
+        margin-right: 6px;
+      }
+    }
+  }
+}

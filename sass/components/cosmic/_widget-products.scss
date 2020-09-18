@@ -2,27 +2,8 @@
   @extend .container;
   margin-bottom: 40px;
   .widget-title {
-    text-transform: uppercase;
-    position: relative;
+    @extend .styled-title;
     margin-top: 30px;
-
-    h2 {
-      background: #fff;
-      position: relative;
-      z-index: 2;
-      display: inline-block;
-      padding-right: 15px;
-      font-family: "Arimo";
-    }
-
-    span {
-      width: 100%;
-      height: 1px;
-      background: #222;
-      position: absolute;
-      right: 0;
-      top: 51%;
-    }
   }
 
   .product_list_widget {

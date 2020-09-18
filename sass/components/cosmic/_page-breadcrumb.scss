@@ -1,0 +1,24 @@
+.page-breadcrumb {
+  background: linear-gradient(to top, #7e5378 10%, #3f2a3c 100%);
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Space Mono";
+
+  .title {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    line-height: 1.25;
+    color: $primary-color;
+  }
+  a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}

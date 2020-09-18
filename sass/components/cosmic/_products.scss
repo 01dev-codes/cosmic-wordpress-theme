@@ -1,0 +1,80 @@
+.products {
+  display: grid;
+  row-gap: 50px;
+  margin: 0;
+  padding: 0;
+
+  li {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+
+    .woocommerce-loop-product__title {
+      margin: 0;
+      font-size: 1em;
+      color: #222;
+      font-family: "Space Mono";
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    .button {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #222;
+      padding: 5px;
+    }
+
+    .price {
+      font-weight: 500;
+    }
+
+    .onsale {
+      display: none;
+    }
+
+    del {
+      opacity: 0.5;
+    }
+
+    ins {
+      background: transparent;
+    }
+
+    del,
+    ins {
+      display: inline-block;
+      margin-top: 6px;
+      font-family: "Arimo";
+      font-size: 16px;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 19px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #222;
+      font-family: "Space Mono";
+      transition: all 0.25s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .products {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+  }
+}

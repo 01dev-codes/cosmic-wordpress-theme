@@ -85,7 +85,6 @@ ul.products li.product .button {
 
 @media screen and (min-width: 48em) {
 	ul.products li.product {
-		width: 30.79667%;
 		float: left;
 		margin-right: 3.8%;
 	}
@@ -98,21 +97,6 @@ ul.products li.product .button {
 	ul.products.columns-1 li.product {
 		float: none;
 		width: 100%;
-	}
-	ul.products.columns-2 li.product {
-		width: 48.1%;
-	}
-	ul.products.columns-3 li.product {
-		width: 30.79667%;
-	}
-	ul.products.columns-4 li.product {
-		width: 22.15%;
-	}
-	ul.products.columns-5 li.product {
-		width: 16.96%;
-	}
-	ul.products.columns-6 li.product {
-		width: 13.49333%;
 	}
 }
 
@@ -137,7 +121,7 @@ ul.products li.product .button {
 }
 
 .single-product div.product .woocommerce-product-gallery .flex-viewport {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 }
 
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs {
@@ -171,7 +155,7 @@ ul.products li.product .button {
 	margin-right: 0;
 }
 
-.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li:nth-child(2n+1) {
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li:nth-child(2n + 1) {
 	clear: both;
 }
 
@@ -183,7 +167,7 @@ ul.products li.product .button {
 	margin-right: 0;
 }
 
-.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-3 .flex-control-thumbs li:nth-child(3n+1) {
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-3 .flex-control-thumbs li:nth-child(3n + 1) {
 	clear: both;
 }
 
@@ -195,7 +179,7 @@ ul.products li.product .button {
 	margin-right: 0;
 }
 
-.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n+1) {
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n + 1) {
 	clear: both;
 }
 
@@ -207,7 +191,7 @@ ul.products li.product .button {
 	margin-right: 0;
 }
 
-.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n+1) {
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n + 1) {
 	clear: both;
 }
 
@@ -432,8 +416,33 @@ p.stars.selected a:not(.active)::before {
 .woocommerce-error,
 .woocommerce-noreviews,
 p.no-comments {
-	background-color: #0f834d;
+	border: 1px solid #000;
+	color: #fff;
+	background: #0f834d;
+	border-color: #0f834d;
 	clear: both;
+	padding: 20px;
+	margin-bottom: 20px;
+	font-family: "Arimo";
+	font-size: 16px;
+}
+
+.woocommerce-message .button,
+.woocommerce-info .button,
+.woocommerce-error .button,
+.woocommerce-noreviews .button,
+p.no-comments .button {
+	padding: 10px;
+	border: 1px solid #fff;
+	margin-right: 10px;
+}
+
+.woocommerce-message a,
+.woocommerce-info a,
+.woocommerce-error a,
+.woocommerce-noreviews a,
+p.no-comments a {
+	color: inherit;
 }
 
 .woocommerce-info,
