@@ -211,18 +211,19 @@ p.stars {
 .woocommerce-noreviews,
 p.no-comments {
   border: 1px solid #000;
-  color: #fff;
-  background: $woocommerce__color-success;
+  color: $woocommerce__color-success;
   border-color: $woocommerce__color-success;
   clear: both;
   padding: 20px;
+  margin: 0;
   margin-bottom: 20px;
   font-family: "Arimo";
   font-size: 16px;
+  list-style-type: none;
 
   .button {
     padding: 10px;
-    border: 1px solid #fff;
+    border: 1px solid $woocommerce__color-success;
     margin-right: 10px;
   }
 
@@ -234,11 +235,13 @@ p.no-comments {
 .woocommerce-info,
 .woocommerce-noreviews,
 p.no-comments {
-  background-color: $woocommerce__color-info;
+  color: $woocommerce__color-info;
+  border-color: $woocommerce__color-info;
 }
 
 .woocommerce-error {
-  background-color: $woocommerce__color-error;
+  border-color: $woocommerce__color-error;
+  color: $woocommerce__color-error;
 }
 
 .demo_store {

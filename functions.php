@@ -214,7 +214,10 @@ add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_product_
 add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_product_single_add_to_cart_text_callback' );
 
 function filter_woocommerce_get_availability( $array, $instance ) { 
-	$array['availability'] = 'Fora de estoque :(';
+	if ($array['class'] === 'out-of-stock') :
+		$array['availability'] = 'Fora de estoque :(';
+	endif;
+
     return $array; 
 }; 
          
