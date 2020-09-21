@@ -1428,6 +1428,34 @@ textarea {
 	width: 100%;
 	list-style-type: none;
 	text-align: center;
+	position: relative;
+}
+
+.products li:hover {
+	opacity: 0.8;
+}
+
+.products li.outofstock {
+	opacity: 0.5;
+}
+
+.products li.outofstock::before {
+	content: "Fora de estoque :(";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #222;
+	color: #fff;
+	opacity: 1;
+}
+
+.products li.outofstock .price {
+	display: none;
+}
+
+.products li.outofstock:hover a {
+	cursor: not-allowed !important;
 }
 
 .products li .woocommerce-loop-product__title {
@@ -1444,6 +1472,8 @@ textarea {
 	margin-bottom: 10px;
 	border: 1px solid #222;
 	padding: 5px;
+	font-size: 14px;
+	display: none !important;
 }
 
 .products li .price {
@@ -1482,10 +1512,6 @@ textarea {
 	transition: all 0.25s;
 }
 
-.products li a:hover {
-	opacity: 0.8;
-}
-
 .products li a img {
 	width: 100%;
 	margin-bottom: 6px;
@@ -1496,6 +1522,151 @@ textarea {
 		grid-template-columns: 1fr 1fr 1fr;
 		column-gap: 50px;
 	}
+}
+
+/**
+ * Sidebar
+ */
+.sidebar {
+	background: #fff;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+	padding: 15px;
+	display: block;
+}
+
+.sidebar .list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.sidebar .list a {
+	color: #383838;
+	font-size: 14px;
+	font-family: "Arimo";
+	margin-bottom: 10px;
+	display: block;
+	text-decoration: none;
+	transition: all 0.25s;
+}
+
+.sidebar .list a.active {
+	color: #f1c828;
+	font-weight: 600;
+}
+
+.sidebar .list a:hover {
+	opacity: 0.8;
+}
+
+.sidebar .title {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+/**
+ * Archive Product
+ */
+.archive.tax-product_cat .woocommerce-result-count {
+	float: left;
+	margin: 0;
+	margin-top: 10px;
+}
+
+.archive.tax-product_cat .woocommerce-ordering {
+	float: right;
+}
+
+.archive.tax-product_cat .woocommerce-ordering select {
+	padding: 10px;
+	border: 1px solid #383838;
+}
+
+.archive.tax-product_cat ul.products {
+	clear: both;
+	padding-top: 30px;
+}
+
+/**
+ * Blog
+ */
+.blog article.post {
+	background: #fff;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+	padding: 0px;
+	display: block;
+	transition: all 0.25s;
+	margin-bottom: 20px;
+}
+
+.blog article.post:hover {
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+.blog article.post a[rel="bookmark"] {
+	text-decoration: none;
+}
+
+.blog article.post .entry-header {
+	padding: 20px 20px 0px 20px;
+}
+
+.blog article.post .entry-header .posted-on {
+	color: #707070;
+	font-weight: 400;
+	font-family: "Space Mono";
+	font-size: 16px;
+}
+
+.blog article.post .entry-header h2 {
+	color: #383838;
+	margin: 0;
+	font-family: "Space Mono";
+	font-weight: 800;
+	font-size: 26px;
+}
+
+.blog article.post .entry-content {
+	margin: 0;
+	padding: 0px 20px 20px 20px;
+}
+
+.blog article.post .entry-content p {
+	font-family: "Arimo";
+	font-size: 15px;
+	line-height: 1.75;
+	color: #383838;
+}
+
+.blog article.post .readmore {
+	display: inline-block;
+	padding: 10px 15px;
+	border: 1px solid #383838;
+	color: #383838;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.blog article.post .readmore:hover {
+	background: #383838;
+	color: #fff;
+}
+
+.blog .pagination .page-numbers {
+	display: inline-block;
+	padding: 10px 15px;
+	border: 1px solid #383838;
+	color: #383838;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.blog .pagination .page-numbers.current, .blog .pagination .page-numbers:hover {
+	background: #383838;
+	color: #fff;
 }
 
 /*--------------------------------------------------------------

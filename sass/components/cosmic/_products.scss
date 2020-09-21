@@ -8,6 +8,34 @@
     width: 100%;
     list-style-type: none;
     text-align: center;
+    position: relative;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &.outofstock {
+      opacity: 0.5;
+
+      &::before {
+        content: "Fora de estoque :(";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #222;
+        color: #fff;
+        opacity: 1;
+      }
+
+      .price {
+        display: none;
+      }
+
+      &:hover a {
+        cursor: not-allowed !important;
+      }
+    }
 
     .woocommerce-loop-product__title {
       margin: 0;
@@ -23,6 +51,8 @@
       margin-bottom: 10px;
       border: 1px solid #222;
       padding: 5px;
+      font-size: 14px;
+      display: none !important;
     }
 
     .price {
@@ -59,10 +89,6 @@
       color: #222;
       font-family: "Space Mono";
       transition: all 0.25s;
-
-      &:hover {
-        opacity: 0.8;
-      }
 
       img {
         width: 100%;

@@ -1,0 +1,21 @@
+.archive.tax-product_cat {
+  .woocommerce-result-count {
+    float: left;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .woocommerce-ordering {
+    float: right;
+
+    select {
+      padding: 10px;
+      border: 1px solid #383838;
+    }
+  }
+
+  ul.products {
+    clear: both;
+    padding-top: 30px;
+  }
+}

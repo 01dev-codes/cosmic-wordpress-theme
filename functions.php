@@ -208,7 +208,14 @@ if ( class_exists( 'WooCommerce' ) ) {
 }
 
 function woocommerce_product_single_add_to_cart_text_callback( $example ) {
-    return 'Eu quero';
+    return 'Adicionar ao carrinho';
 }
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_product_single_add_to_cart_text_callback' );
 add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_product_single_add_to_cart_text_callback' );
+
+function filter_woocommerce_get_availability( $array, $instance ) { 
+	$array['availability'] = 'Fora de estoque :(';
+    return $array; 
+}; 
+         
+add_filter( 'woocommerce_get_availability', 'filter_woocommerce_get_availability', 10, 2 ); 
