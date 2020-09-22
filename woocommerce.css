@@ -553,4 +553,22 @@ p.no-comments {
 	height: 100%;
 }
 
+/**
+ * WooCommerce account
+ */
+.woocommerce-account .woocommerce {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 768px) {
+	.woocommerce-account .woocommerce {
+		flex-direction: row;
+	}
+	.woocommerce-account .woocommerce-MyAccount-navigation {
+		width: 100%;
+		max-width: 300px;
+	}
+}
+
 /*# sourceMappingURL=woocommerce.css.map */
