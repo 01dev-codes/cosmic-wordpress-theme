@@ -565,7 +565,7 @@ p.no-comments {
 .woocommerce-page #place_order {
 	border: none;
 	width: 100%;
-	background: #fed576;
+	background: #e5e831;
 	color: #383838;
 	text-transform: uppercase;
 	padding: 15px;
@@ -728,7 +728,7 @@ p.no-comments {
 	display: block;
 	cursor: pointer;
 	padding: 15px;
-	background: #fed576;
+	background: #e5e831;
 	text-transform: uppercase;
 	border: none;
 	color: #383838;
