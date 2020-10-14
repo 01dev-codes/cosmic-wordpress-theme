@@ -897,12 +897,12 @@ textarea {
 	opacity: 0.5;
 }
 
-.top-bar .col-sm-8:last-child {
+.top-bar .col-12:last-child {
 	display: flex;
 	justify-content: center;
 }
 
-.top-bar .col-sm-8:last-child p {
+.top-bar .col-12:last-child p {
 	margin: 0;
 	margin-right: 10px;
 }
@@ -912,7 +912,7 @@ textarea {
 		padding: 0;
 		text-align: left;
 	}
-	.top-bar .col-sm-8:last-child {
+	.top-bar .col-12:last-child {
 		justify-content: flex-end;
 		margin-top: 0px;
 	}
