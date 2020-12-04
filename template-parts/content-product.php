@@ -40,7 +40,7 @@ if ( post_password_required() ) {
 
         <div class="product-notice">
             <i class="fa fa-cat"></i>
-            <p>Os produtos são feitos artesanalmente.<br />O prazo de produção é de até <strong>7 dias</strong> úteis.</p>
+            <p>Os produtos são feitos artesanalmente.<br />O prazo de produção é de até <strong>3 dias</strong> úteis.</p>
         </div>
 
         </div>

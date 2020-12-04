@@ -222,3 +222,9 @@ function filter_woocommerce_get_availability( $array, $instance ) {
 }; 
          
 add_filter( 'woocommerce_get_availability', 'filter_woocommerce_get_availability', 10, 2 ); 
+
+add_action( 'woocommerce_before_add_to_cart_quantity', 'wp_echo_qty_front_add_cart' );
+ 
+function wp_echo_qty_front_add_cart() {
+ echo '<div class="qty">Quantidade</div>'; 
+}

@@ -36,6 +36,8 @@
 
   .cart {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     .quantity {
       margin-right: 10px;
@@ -115,5 +117,43 @@
     .resultado-frete thead {
       font-weight: bold;
     }
+  }
+
+  p.price {
+    margin: 0.5em 0;
+  }
+
+  table.thwepo-extra-options {
+    margin: 25px 0px;
+
+    td {
+      padding-bottom: 15px;
+    }
+
+    .label-tag {
+      font-size: 18px;
+    }
+
+    select.thwepof-input-field,
+    input,
+    textarea {
+      padding: 15px;
+      border-radius: 0px;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      width: 100%;
+      max-width: 435px;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .qty {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
   }
 }
