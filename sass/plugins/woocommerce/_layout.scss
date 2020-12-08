@@ -29,6 +29,30 @@
   color: #383838;
 }
 
+.woocommerce-terms-and-conditions-wrapper {
+  display: none;
+}
+
+#billing_country_field {
+  display: none;
+}
+
+.woocommerce-additional-fields {
+  display: none;
+}
+
+.payment_box.payment_method_pagseguro {
+  display: none !important;
+}
+
+.woocommerce-shipping-methods li {
+  margin-bottom: 10px;
+
+  label {
+    margin-left: 10px;
+  }
+}
+
 .shop_table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -60,10 +84,19 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     margin-bottom: 10px;
     padding-bottom: 10px;
+    text-align: left;
   }
   td {
     padding: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  }
+
+  .woocommerce-shipping-totals td {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
   }
 
   .product-thumbnail a {
@@ -226,6 +259,11 @@ form.woocommerce-checkout {
 .payment_methods {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.wc_payment_methods {
+  margin-bottom: 20px;
 }
 
 .woocommerce-billing-fields h3 {

@@ -1,5 +1,35 @@
 .single-product {
   font-family: "Arimo";
+
+  .single_variation_wrap {
+    width: 100%;
+  }
+
+  .variations {
+    tr {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    select {
+      width: 100%;
+      background: #fff;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 0px;
+      background: #fff;
+      cursor: pointer;
+    }
+  }
+
+  .reset_variations {
+    display: none !important;
+  }
   .woocommerce-tabs {
     font-size: 16px;
     line-height: 1.75;
@@ -16,10 +46,14 @@
   .site-main {
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  .main-price {
+  .main-price,
+  .woocommerce-variation-price {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
     del {
       font-size: 18px;
       color: rgba(0, 0, 0, 0.4);
@@ -40,13 +74,11 @@
     flex-wrap: wrap;
 
     .quantity {
-      margin-right: 10px;
+      width: 100%;
 
       input {
-        width: 90px;
-        height: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
+        width: 100%;
+        padding: 15px;
       }
     }
 
@@ -60,7 +92,9 @@
       font-size: 21px;
       line-height: 1;
       border-radius: 0px;
-      padding: 20px 32px;
+      padding: 20px;
+      margin-top: 22px;
+      width: 100%;
 
       &:hover {
         opacity: 0.8;
@@ -80,6 +114,16 @@
     .calculo-de-frete {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
+
+      &::before {
+        content: "Calcular Frete";
+        width: 100%;
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
 
       svg {
         display: none;
@@ -87,15 +131,20 @@
     }
 
     .calculo-de-frete input {
-      width: 200px;
+      width: calc(96% - 110px);
       height: 60px;
       margin-right: 10px;
       text-align: left;
       padding-left: 20px;
       font-size: 16px;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
     }
 
     .calculo-de-frete #calcular-frete {
+      width: 110px;
       height: 60px;
       line-height: 1;
       flex-shrink: 0;
@@ -107,6 +156,7 @@
       background: transparent;
       border: 1px solid #222;
       color: #222;
+      justify-content: center;
     }
 
     #calcular-frete-loader {
@@ -123,15 +173,24 @@
     margin: 0.5em 0;
   }
 
+  table.thwepo-extra-options.thwepo_variable::before {
+    content: "Personalize sua vela";
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+  }
+
   table.thwepo-extra-options {
-    margin: 25px 0px;
+    margin: 0px;
 
     td {
       padding-bottom: 15px;
     }
 
     .label-tag {
-      font-size: 18px;
+      font-size: 16px;
+      font-weight: bold;
     }
 
     select.thwepof-input-field,
@@ -140,10 +199,8 @@
       padding: 15px;
       border-radius: 0px;
       background: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.5);
       cursor: pointer;
       width: 100%;
-      max-width: 435px;
 
       &::placeholder {
         opacity: 0.5;
@@ -155,5 +212,9 @@
     display: inline-flex;
     align-items: center;
     margin-right: 10px;
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
   }
 }

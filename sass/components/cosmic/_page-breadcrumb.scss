@@ -1,6 +1,6 @@
 .page-breadcrumb {
-  background: linear-gradient(to top, #7e5378 10%, #3f2a3c 100%);
-  min-height: 150px;
+  background: linear-gradient(to top, #d04abd 10%, #901980 100%);
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,13 +12,21 @@
   .title {
     margin: 0;
     padding: 0;
-    font-size: 50px;
+    font-size: 32px;
     line-height: 1.25;
     color: $primary-color;
+    word-break: break-word;
   }
+
   a {
     color: inherit;
     font-weight: 600;
     text-decoration: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-breadcrumb .title {
+    font-size: 50px;
   }
 }

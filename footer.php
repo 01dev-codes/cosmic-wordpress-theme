@@ -16,7 +16,7 @@
 		<p class="details">
 			© 2020 Todos os direitos reservados.<br />
 			CNPJ: 00.400.667/0001-81<br />
-			Porto Alegre, RS
+			Rua General Couto de Magalhães, 1155<br />Porto Alegre, RS
 		</p>
 		<?php get_template_part( 'template-parts/social-media' ); ?>
 	</footer><!-- #colophon -->

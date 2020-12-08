@@ -1,6 +1,9 @@
 .widget_products {
   @extend .container;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
   margin-bottom: 40px;
+
   .widget-title {
     @extend .styled-title;
     margin-top: 30px;

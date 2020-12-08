@@ -5,13 +5,14 @@
     .woocommerce-product-gallery {
       position: relative;
       float: left;
+      width: 100%;
 
       .woocommerce-product-gallery__trigger {
         position: absolute;
         top: 2em;
         right: 1em;
-        display: block;
         z-index: 99;
+        display: none !important;
       }
 
       .flex-viewport {
