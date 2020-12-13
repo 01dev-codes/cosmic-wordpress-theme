@@ -229,26 +229,10 @@ function wp_echo_qty_front_add_cart() {
  echo '<div class="qty">Quantidade</div>'; 
 }
 
-// Hook in
-add_filter( 'woocommerce_default_address_fields' , 'custom_override_default_address_fields' );
-
-// Our hooked in function - $address_fields is passed via the filter!
-function custom_override_default_address_fields( $address_fields ) {
-     $address_fields['city']['class'] = array('form-row address-field validate-required form-row-first');
-     $address_fields['state']['class'] = array('form-row address-field validate-required validate-state form-row-last');
-     $address_fields['postcode']['class'] = array('form-row address-field validate-required validate-postcode form-row-wide form-row-first');
-
-     return $address_fields;
-}
-
-// Hook in
-add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
-
-// Our hooked in function - $fields is passed via the filter!
-function custom_override_checkout_fields( $fields ) {
-	 unset($fields['order']['order_comments']);
-	 
-	 $fields['billing']['billing_phone']['class'] = array('form-row form-row-wide validate-required validate-phone form-row-last');
-
-     return $fields;
+add_action( 'woocommerce_after_add_to_cart_quantity', 'misha_before_add_to_cart_btn', 999999 );
+ 
+function misha_before_add_to_cart_btn(){
+	echo '<div class="main-price">';
+	echo woocommerce_template_single_price();
+	echo '</div>';
 }

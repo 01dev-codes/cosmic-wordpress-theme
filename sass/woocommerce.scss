@@ -1,48 +1,79 @@
-/*
-Theme Name: _s
+.woocommerce-billing-fields .form-row,
+.woocommerce-shipping-fields .form-row,
+.woocommerce form .form-row {
+  display: block;
+}
 
-WooCommerce styles override
-*/
+.woocommerce .col2-set .col-1,
+.woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2 {
+  max-width: unset;
+}
 
-// WooCommerce color variables
-$woocommerce__color-error: #e2401c;
-$woocommerce__color-success: #0f834d;
-$woocommerce__color-info: #3d9cd2;
+#customer_details .col-1 {
+  width: 100%;
+}
 
-// Import variables and mixins
-@import "abstracts/abstracts";
+#customer_details .col-2 {
+  display: none;
+}
 
-/**
- * Shop tables
- */
-@import "plugins/woocommerce/tables";
+#billing_company_field {
+  display: none;
+}
 
-/**
- * Products
- */
-@import "plugins/woocommerce/products";
+.woocommerce div.product div.images.woocommerce-product-gallery {
+  width: 100%;
+}
 
-/**
- * Single product
- */
-@import "plugins/woocommerce/single-product";
+.woocommerce .quantity .qty {
+  text-align: left;
+}
 
-/**
- * Checkout
- */
-@import "plugins/woocommerce/checkout";
+.woocommerce-cart-form .shop_table .coupon {
+  input {
+    width: auto !important;
+    font-size: 14px;
+    height: 37px;
+  }
+  button {
+    height: 37px;
+    font-size: 14px;
+  }
+}
 
-/**
- * General WooCommerce components
- */
-@import "plugins/woocommerce/components";
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  background: #d04abd;
+}
 
-/**
- * WooCommerce widgets
- */
-@import "plugins/woocommerce/widgets";
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  margin-top: 30px;
+}
 
-/**
- * WooCommerce layout
- */
-@import "plugins/woocommerce/layout";
+#billing_country_field,
+.woocommerce-privacy-policy-text {
+  display: none;
+}
+
+#add_payment_method #payment ul.payment_methods,
+.woocommerce-cart #payment ul.payment_methods,
+.woocommerce-checkout #payment ul.payment_methods {
+  border: none;
+  padding-bottom: 0;
+}
+
+#add_payment_method #payment div.form-row,
+.woocommerce-cart #payment div.form-row,
+.woocommerce-checkout #payment div.form-row {
+  padding-top: 0;
+}
+
+.woocommerce #payment #place_order,
+.woocommerce-page #payment #place_order {
+  width: 100%;
+  height: 50px;
+}

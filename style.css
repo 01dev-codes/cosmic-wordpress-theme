@@ -403,7 +403,7 @@ h6 {
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 0.5em;
 }
 
 dfn,
@@ -491,7 +491,7 @@ dt {
 }
 
 dd {
-	margin: 0 1.5em 1.5em;
+	margin: 0;
 }
 
 /* Make sure embeds and iframes fit their containers. */
@@ -518,15 +518,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #26272b;
 }
 
 a:visited {
-	color: #800080;
+	color: #464646;
 }
 
 a:hover, a:focus, a:active {
-	color: #191970;
+	color: #54545a;
 }
 
 a:focus {
@@ -582,7 +582,7 @@ textarea {
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 0px;
-	padding: 3px;
+	padding: 15px;
 }
 
 input[type="text"]:focus,
@@ -610,6 +610,18 @@ select {
 
 textarea {
 	width: 100%;
+}
+
+.select2-selection__rendered {
+	line-height: 50px !important;
+}
+
+.select2-container .select2-selection--single {
+	height: 50px !important;
+}
+
+.select2-selection__arrow {
+	height: 49px !important;
 }
 
 /*--------------------------------------------------------------
@@ -1213,10 +1225,17 @@ textarea {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	color: #fff;
 	text-transform: uppercase;
 	font-size: 16px;
 	font-family: "Space Mono";
+}
+
+.page-breadcrumb .woocommerce-breadcrumb {
+	color: #fff;
+}
+
+.page-breadcrumb .woocommerce-breadcrumb a {
+	color: inherit;
 }
 
 .page-breadcrumb .title {
@@ -1229,7 +1248,6 @@ textarea {
 }
 
 .page-breadcrumb a {
-	color: inherit;
 	font-weight: 600;
 	text-decoration: none;
 }
@@ -1249,6 +1267,10 @@ textarea {
 
 .single-product .single_variation_wrap {
 	width: 100%;
+}
+
+.single-product .variations {
+	margin: 0;
 }
 
 .single-product .variations tr {
@@ -1280,10 +1302,6 @@ textarea {
 	line-height: 1.75;
 }
 
-.single-product .woocommerce-tabs .tabs {
-	display: none;
-}
-
 .single-product .woocommerce-Tabs-panel--description {
 	margin: 1em 0;
 }
@@ -1303,7 +1321,7 @@ textarea {
 .single-product .woocommerce-variation-price {
 	display: flex;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 
 .single-product .main-price del,
@@ -1344,11 +1362,11 @@ textarea {
 	color: #575757;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 21px;
+	font-size: 19px;
 	line-height: 1;
 	border-radius: 0px;
 	padding: 20px;
-	margin-top: 22px;
+	margin-top: 0px;
 	width: 100%;
 }
 
@@ -1533,8 +1551,6 @@ textarea {
  * Products
  */
 .products {
-	display: grid;
-	row-gap: 50px;
 	margin: 0;
 	padding: 0;
 }
@@ -1630,13 +1646,6 @@ textarea {
 .products li a img {
 	width: 100%;
 	margin-bottom: 6px;
-}
-
-@media (min-width: 768px) {
-	.products {
-		grid-template-columns: 1fr 1fr 1fr;
-		column-gap: 50px;
-	}
 }
 
 /**
