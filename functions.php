@@ -236,3 +236,10 @@ function misha_before_add_to_cart_btn(){
 	echo woocommerce_template_single_price();
 	echo '</div>';
 }
+
+add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
+
+function wcs_woo_remove_reviews_tab($tabs) {
+	unset($tabs['reviews']);
+	return $tabs;
+}

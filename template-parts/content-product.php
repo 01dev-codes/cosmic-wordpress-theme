@@ -36,7 +36,7 @@ if ( post_password_required() ) {
     
     <div class="row">
         <div class="col-12 col-md-6">
-        <?php echo woocommerce_show_product_images(); ?>
+        <?php do_action( 'woocommerce_before_single_product_summary' ); ?>
 
         <div class="product-notice">
             <i class="fa fa-cat"></i>
